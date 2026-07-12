@@ -16,7 +16,10 @@ cd cosmprund
 make build
 
 # run cosmprund 
-./build/cosmprund prune ~/.gaiad/data --app=cosmoshub --backend=pebbledb --blocks=362880 --versions=362880 --compact=true
+./build/cosmos-pruner prune ~/.gaiad/data --app=cosmoshub --backend=pebbledb --blocks=362880 --versions=362880 --compact=true
+
+# contoh pushchain
+cosmprund prune ~/.pchain/data --backend=goleveldb --blocks=10 --versions=10 --compact=true
 ```
 
 Flags: 
